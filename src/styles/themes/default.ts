@@ -6,6 +6,8 @@ export const defaultTheme = {
     "gray-100": "#F2F7FA",
     "gray-200": "#E2E8F0",
     "gray-300": "#CBD5E0",
+    "gray-400": "#EDF2F7",
+    "gray-500": "#BFCFE0",
     "gray-700": "#4A5568",
     "gray-800": "#2D3748",
 
@@ -23,6 +25,7 @@ export const defaultTheme = {
     "blue-200": "#BFE3FF",
     "blue-300": "#99D1FF",
     "blue-700": "#003A66",
+    "blue-800": "#062952",
 
     "cyan-100": "#DEF5F7",
     "cyan-200": "#AAECF2",
@@ -37,6 +40,7 @@ export const defaultTheme = {
   fontSizes: {
     sm: "10.5px",
     md: "14px",
+    l: "17.5px",
     xl: "26.25px",
   },
   fontWeights: {
