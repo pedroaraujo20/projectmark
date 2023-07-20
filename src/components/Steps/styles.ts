@@ -39,6 +39,8 @@ export const Box = styled.div<{ isActive?: boolean }>`
 `;
 
 export const Description = styled.span`
+  text-align: center;
+
   ${({ theme }) => css`
     font-size: ${theme.fontSizes.sm};
     font-weight: ${theme.fontWeights.bold};
