@@ -12,7 +12,11 @@ export const Container = styled.div<ColorProps>`
   height: 558px;
 
   ${({ theme, color }) => css`
-    background-color: ${theme.colors[`${color}-100`]};
+    background: linear-gradient(
+      to bottom,
+      ${theme.colors[`${color}-100`]} 50%,
+      ${theme.colors.white}
+    );
   `};
 `;
 

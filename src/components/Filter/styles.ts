@@ -14,11 +14,41 @@ export const Container = styled.div<{ isActive?: boolean }>`
   ${({ theme, isActive }) => css`
     border: 2px solid ${theme.colors["gray-300"]};
 
-    &:hover {
-      border: 2px solid ${theme.colors.blueHighlight};
-    }
+    ${!isActive &&
+    css`
+      &:hover {
+        background-color: ${theme.colors["gray-200"]};
+      }
+    `}
 
-    ${isActive && `border: 2px solid ${theme.colors.blueHighlight};`}
+    ${isActive &&
+    css`
+      border: 2px solid ${theme.colors.blueHighlight};
+
+      &::before {
+        content: "";
+        position: absolute;
+
+        border: 1px solid ${theme.colors.blueHighlight};
+        border-color: ${theme.colors.blueHighlight} transparent;
+        border-width: 10px 12px 0;
+
+        top: 100%;
+        left: 50%;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+
+        border-color: ${theme.colors.white} transparent;
+        border-style: solid;
+        border-width: 10px 12px 0;
+
+        bottom: -7px;
+        left: 50%;
+      }
+    `}
   `}
 `;
 
