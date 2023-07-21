@@ -29,9 +29,10 @@ export const Container = styled.div<{ isActive?: boolean }>`
         content: "";
         position: absolute;
 
-        border: 1px solid ${theme.colors.blueHighlight};
+        border: 2px solid ${theme.colors.blueHighlight};
         border-color: ${theme.colors.blueHighlight} transparent;
         border-width: 10px 12px 0;
+        margin-left: -10px;
 
         top: 100%;
         left: 50%;
@@ -44,6 +45,7 @@ export const Container = styled.div<{ isActive?: boolean }>`
         border-color: ${theme.colors.white} transparent;
         border-style: solid;
         border-width: 10px 12px 0;
+        margin-left: -10px;
 
         bottom: -7px;
         left: 50%;
